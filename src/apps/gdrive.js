@@ -9,7 +9,7 @@ chrome.storage.sync.get(['password', 'salt'], passwords => {
       el.classList.add('rclone-decrypted')
     })
 
-  const FILE_NAMES = 'span[data-is-doc-name="true"]:not(.rclone-decrypted)'
+  const FILE_NAMES = '[data-column-field="6"]:not(.rclone-decrypted)'
   const PARENT_FOLDERS = '[data-target="folder"]:not(.rclone-decrypted)'
   const CURRENT_FOLDER = '[guidedhelpid="folder_path_button"] > div > div:not(.rclone-decrypted)'
 
